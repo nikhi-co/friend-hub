@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>♡Friend Hub Login♡</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="y2k-desktop">
+
+    <!-- Floating decorations -->
+    <div class="bubble b1"></div>
+    <div class="bubble b2"></div>
+    <div class="bubble b3"></div>
+    <div class="bubble b4"></div>
+    <div class="bubble b5"></div>
+    <div class="bubble b6"></div>
+
+    <div class="sparkle s1">✦</div>
+    <div class="sparkle s2">✧</div>
+    <div class="sparkle s3">♡</div>
+
+    <!-- LOGIN WINDOW -->
+
+    <main class="window login-window">
+
+        <!-- Window title bar -->
+        <div class="title-bar">
+
+            <div class="window-title">
+                💗 FRIEND HUB — LOGIN💗
+            </div>
+
+            <div class="window-controls">
+                <button>_</button>
+                <button>□</button>
+                <button>×</button>
+            </div>
+
+        </div>
+
+        <!-- Window content -->
+
+        <div class="window-content">
+
+            <div class="computer-icon">
+                💿
+            </div>
+
+            <h1>WELCOME BACK!</h1>
+
+            <p class="window-subtitle">
+                ♡ enter your hub information ♡
+            </p>
+
+            <div class="field">
+
+                <label>USERNAME</label>
+
+                <input
+                    type="text"
+                    id="username"
+                    placeholder="type username..."
+                >
+
+            </div>
+
+            <div class="field">
+
+                <label>PASSWORD</label>
+
+                <input
+                    type="password"
+                    id="password"
+                    placeholder="type password..."
+                >
+
+            </div>
+
+            <button class="y2k-button main-action" onclick="login()">
+                ✦ ENTER HUB ✦
+            </button>
+
+            <div class="or-line">
+                ───── ♡ OR ♡ ─────
+            </div>
+
+            <button
+                class="y2k-button"
+                onclick="window.location.href='create-hub.html'"
+            >
+                ♡ CREATE A HUB
+            </button>
+
+            <p id="login-message" class="message"></p>
+
+        </div>
+
+        <!-- Status bar -->
+
+        <div class="status-bar">
+
+            <span>💿 FRIEND HUB</span>
+
+            <span>♡ ONLINE ♡</span>
+
+        </div>
+
+    </main>
+
+    <div class="desktop-text">
+        ✦ welcome to your little corner of the internet ✦
+    </div>
+
+
+    <script>
+
+        function login() {
+
+            const username =
+                document.getElementById("username").value.trim();
+
+            const password =
+                document.getElementById("password").value;
+
+            const message =
+                document.getElementById("login-message");
+
+            if (!username || !password) {
+
+                message.textContent =
+                    "⚠ please enter your username & password!";
+
+                return;
+            }
+
+            message.textContent =
+                "♡ account system coming next!";
+
+        }
+
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>♡Create Your Hub♡ </title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body class="y2k-desktop">
+
+    <!-- Floating decorations -->
+
+    <div class="bubble b1"></div>
+    <div class="bubble b2"></div>
+    <div class="bubble b3"></div>
+    <div class="bubble b4"></div>
+    <div class="bubble b5"></div>
+    <div class="bubble b6"></div>
+
+    <div class="sparkle s1">✦</div>
+    <div class="sparkle s2">✧</div>
+    <div class="sparkle s3">♡</div>
+
+
+    <!-- CREATE HUB WINDOW -->
+
+    <main class="window create-window">
+
+        <div class="title-bar">
+
+            <div class="window-title">
+                💗 FRIEND HUB — CREATE💗
+            </div>
+
+            <div class="window-controls">
+
+                <button>_</button>
+                <button>□</button>
+                <button>×</button>
+
+            </div>
+
+        </div>
+
+
+        <div class="window-content">
+
+            <div class="computer-icon">
+                🫧
+            </div>
+
+            <h1>CREATE YOUR HUB!</h1>
+
+            <p class="window-subtitle">
+                ♡ make a little space for your friends ♡
+            </p>
+
+
+            <div class="field">
+
+                <label>CHOOSE A USERNAME</label>
+
+                <input
+                    type="text"
+                    id="newUsername"
+                    placeholder="your hub username..."
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label>CREATE A PASSWORD</label>
+
+                <input
+                    type="password"
+                    id="newPassword"
+                    placeholder="your password..."
+                >
+
+            </div>
+
+
+            <div class="field">
+
+                <label>CONFIRM PASSWORD</label>
+
+                <input
+                    type="password"
+                    id="confirmPassword"
+                    placeholder="type it again..."
+                >
+
+            </div>
+
+
+            <button
+                class="y2k-button main-action"
+                onclick="createHub()"
+            >
+                ✦ CREATE MY HUB ✦
+            </button>
+
+
+            <button
+                class="y2k-button back-button"
+                onclick="window.location.href='index.html'"
+            >
+                ← BACK TO LOGIN
+            </button>
+
+
+            <p id="create-message" class="message"></p>
+
+        </div>
+
+
+        <div class="status-bar">
+
+            <span>🫧 NEW HUB 🫧</span>
+
+            <span>♡ SETUP MODE ♡</span>
+
+        </div>
+
+    </main>
+
+
+    <div class="desktop-text">
+        ✦ ♡your friends are waiting ♡ ✦
+    </div>
+
+
+    <script>
+
+        function createHub() {
+
+            const username =
+                document.getElementById("newUsername").value.trim();
+
+            const password =
+                document.getElementById("newPassword").value;
+
+            const confirmPassword =
+                document.getElementById("confirmPassword").value;
+
+            const message =
+                document.getElementById("create-message");
+
+
+            if (!username || !password || !confirmPassword) {
+
+                message.textContent =
+                    "⚠ please fill in everything!";
+
+                return;
+            }
+
+
+            if (password !== confirmPassword) {
+
+                message.textContent =
+                    "⚠ the passwords don't match!";
+
+                return;
+            }
+
+
+            message.textContent =
+                "♡ account system coming next!♡";
+
+        }
+
+    </script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="supabase.js"></script>
+</body>
+</html>
