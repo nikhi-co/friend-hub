@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Hub — Account Login</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="window">
+
+        <div class="window-header">
+            <span>♡ FRIEND HUB — ACCOUNT LOGIN</span>
+            <span>×</span>
+        </div>
+
+        <div class="window-content">
+
+            <div class="title">
+                ✦ WELCOME BACK ✦
+            </div>
+
+            <p class="subtitle">
+                enter your account to enter the hub ♡
+            </p>
+
+            <div class="field">
+                <label>USERNAME</label>
+
+                <input
+                    type="text"
+                    id="loginUsername"
+                    placeholder="your username..."
+                    autocomplete="username"
+                >
+            </div>
+
+            <div class="field">
+                <label>PASSWORD</label>
+
+                <input
+                    type="password"
+                    id="loginPassword"
+                    placeholder="your password..."
+                    autocomplete="current-password"
+                >
+            </div>
+
+            <button id="accountLoginBtn">
+                ✦ ENTER HUB ✦
+            </button>
+
+            <p id="loginMessage"></p>
+
+            <div class="small-link">
+                New here? ♡
+            </div>
+
+            <button id="newAccountBtn" class="secondary-button">
+                CREATE ACCOUNT
+            </button>
+
+        </div>
+
+    </div>
+
+    <script src="accountlogin.js"></script>
+
+</body>
+</html>
