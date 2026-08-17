@@ -596,3 +596,137 @@ body {
     letter-spacing: 1px;
 
 }
+/* =========================================
+   ACCOUNT PAGE THEME
+========================================= */
+
+.account-theme .y2k-desktop {
+    background:
+        radial-gradient(circle at 20% 20%, #ffffff 0 2%, transparent 3%),
+        radial-gradient(circle at 80% 30%, #ffffff 0 1.5%, transparent 2%),
+        linear-gradient(
+            135deg,
+            #e5d6ff,
+            #d8c8ff,
+            #c9e7ff,
+            #e6d9ff
+        );
+}
+
+.account-theme .window {
+    background: #f4edff;
+    outline-color: #9b8bd8;
+}
+
+.account-theme .title-bar {
+    background:
+        linear-gradient(
+            90deg,
+            #8b7bdc,
+            #a993e8,
+            #9bd4ed
+        );
+}
+
+.account-theme .field label {
+    color: #6757a0;
+}
+
+.account-theme .field input {
+    border-color: #aaa0df;
+    background: #fcfaff;
+}
+
+.account-theme .field input:focus {
+    border-color: #82bde2;
+}
+
+.account-theme .y2k-button {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #ddd2ff 45%,
+            #c2b2ed 100%
+        );
+
+    color: #5d5195;
+}
+
+.account-theme .main-action {
+    background:
+        linear-gradient(
+            180deg,
+            #cceaff,
+            #9fcce9,
+            #819fd4
+        );
+}
+
+
+/* =========================================
+   ACCOUNT LOGIN THEME
+========================================= */
+
+.account-login-theme .y2k-desktop {
+    background:
+        radial-gradient(circle at 20% 20%, #ffffff 0 2%, transparent 3%),
+        radial-gradient(circle at 80% 30%, #ffffff 0 1.5%, transparent 2%),
+        linear-gradient(
+            135deg,
+            #d4f3ff,
+            #c8e8ff,
+            #e6d4ff,
+            #d9f2ff
+        );
+}
+
+.account-login-theme .window {
+    background: #effaff;
+    outline-color: #7ebbd8;
+}
+
+.account-login-theme .title-bar {
+    background:
+        linear-gradient(
+            90deg,
+            #6eb9dc,
+            #8e9ee5,
+            #c08ddd
+        );
+}
+
+.account-login-theme .field label {
+    color: #536c9e;
+}
+
+.account-login-theme .field input {
+    border-color: #9bc8df;
+    background: #fbfeff;
+}
+
+.account-login-theme .field input:focus {
+    border-color: #8d9de4;
+}
+
+.account-login-theme .y2k-button {
+    background:
+        linear-gradient(
+            180deg,
+            #ffffff 0%,
+            #d8f1ff 45%,
+            #add8ee 100%
+        );
+
+    color: #526b9d;
+}
+
+.account-login-theme .main-action {
+    background:
+        linear-gradient(
+            180deg,
+            #d6d9ff,
+            #a9b5ef,
+            #8798df
+        );
+}
